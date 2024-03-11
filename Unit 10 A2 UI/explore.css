@@ -1,0 +1,250 @@
+.shops {
+  margin-top: 8%;
+  align-items: center;
+  margin-left: 0 auto;
+}
+.shops h2{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+.shops p{
+  margin-top: 2%;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.5rem;
+  width: 50%;
+  margin-left: 25%;
+}
+.card-body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 50px;
+}
+ .cards {
+  width: 525px;
+  background-color: #239a9a;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
+ .cards:hover{
+  transform: translateY(-20px);
+}
+.cards img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: .6;
+}
+.card-content {
+  padding: 20px;
+}
+ .card-content h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+ .card-content h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+.card-content li{
+  font-size: 25px;
+  line-height: 3rem;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .shops {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 600px) {
+  .shops {
+    margin-top: 30%;
+  }
+}
+.access {
+  margin-top: 5%;
+  align-items: center;
+  margin-left: 0 auto;
+}
+.access h1{
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+.access p{
+  margin-top: 2%;
+  font-size: 25px;
+  line-height: 2rem;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+.function{
+  margin-top: 5%;
+  align-items: center;
+  margin-left: 0 auto;
+}
+.function h1{
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+.function p{
+  margin-top: 2%;
+  font-size: 25px;
+  line-height: 2rem;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+.ws{
+  margin-top: 5%;
+  align-items: center;
+  margin-left: 0 auto;
+}
+.ws h1{
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+.ws p{
+  margin-top: 2%;
+  font-size: 25px;
+  line-height: 2rem;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+@media(max-width: 768px){
+  .access{
+    margin-top: 10%;
+  }
+  .function{
+    margin-top: 10%;
+  }
+  .ws{
+     margin-top: 20%;
+  }
+}
+@media(max-width: 600px){
+  .access{
+    margin-top: 20%;
+  }
+  .function{
+    margin-top: 20%;
+  }
+  .ws{
+     margin-top: 20%;
+  }
+}
+.dropdown{
+  margin-top: 5%;
+  margin-left: 35%;
+}
+.dropdown button{
+  background-color: purple;
+  font-size: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: 50%;
+  border-radius: 5px;
+}
+.dropdown:hover button{
+  background-color: black;
+  color: white;
+}
+.dropdown .unique{
+  padding: 0;  
+}
+.dropdown .unique:hover{
+background-color: transparent;
+}
+.dropdown a {
+display: block;
+color: black;
+text-decoration: none;
+padding: 10px 15px;
+}
+.dropdown a:hover {
+background-color: hsl(0, 0%, 90%);
+}
+.dropdown .option{
+  position: absolute;
+  background-color: hsl(0, 0%, 95%);
+  min-width: 32.5%;
+  display: none;
+}
+
+.dropdown:hover .option{
+  display: block;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+   gap: 10px;
+}
+#dark-mode,
+#light-mode,
+#black-mode,
+#blue-mode {
+  width: 130px;
+  margin-top: 20px;
+  height: 35px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+#dark-mode:hover,
+#light-mode:hover,
+#black-mode:hover,
+#blue-mode:hover {
+  background-color: #217373;
+  transition: background-color .4s;
+}
+
+.dark-mode {
+  background-color: #192929;
+  color: white;
+  transition: background-color 1s;
+}
+.black-mode {
+  background-color: black;
+  color: white;
+  transition: background-color 1s;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+  transition: background-color 1s;
+}
+.blue-mode {
+  background-color: #206fac;
+  color: white;
+  transition: background-color 1s;
+}

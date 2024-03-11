@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' type="image/png" href='icons8-huawei-logo-32.png'>
+    <title>AMAP Mall</title>
+    <link rel="stylesheet" href="special.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <!--Script Tags -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class='logo'><span>A</span>map <span>M</span>all
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+           <img width="64" height="64" src="https://img.icons8.com/dusk/64/huawei-logo.png" alt="huawei-logo"/></li>
+        <li class='btn'><span class="fas fa-bars"></span></li>
+        <div class='items'>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='special.html'>Special Offers</a></li>
+          <li><a href='explore.html'>Explore Mall</a></li>
+          <li><a href='mapp.html'>Mall Map</a </li>
+          <li><a href='contact.html'>Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+    <div class= 'special-pgh'>
+       <h2>Special Offers</h2>
+      <div class='buttonContainer'>
+        <button id='dark-mode' onclick='darkLightMode()'>Canya Mode</button>
+        <button id='light-mode' onclick='darkLightMode()'>Light Mode</button>
+        <button id='black-mode' onclick='darkLightMode()'>Dark Mode</button>
+        <button id='blue-mode' onclick='darkLightMode()'>Blue Mode</button>
+      </div>
+      <script>
+        function darkLightMode(){
+          let darkMode = document.getElementById('dark-mode');
+          let lightMode = document.getElementById('light-mode');
+          let blackMode = document.getElementById('black-mode');
+          let blueMode = document.getElementById('blue-mode');
+          darkMode.addEventListener('click', function() {
+            let display = document.body;
+            let content = document.getElementById('dark-mode');
+            display.className = 'dark-mode'
+          });
+          lightMode.addEventListener('click', function() {
+            let lightDisplay= document.body;
+            let lightContent = document.getElementById('light-mode');
+            lightDisplay.className = 'light-mode'
+          }); 
+          blackMode.addEventListener('click', function() {
+            let blackDisplay = document.body;
+            let blackContent = document.getElementById('black-mode');
+            blackDisplay.className = 'black-mode'
+          });
+          blueMode.addEventListener('click', function() {
+            let blueDisplay = document.body;
+            let blueContent = document.getElementById('blue-mode');
+            blueDisplay.className = 'blue-mode'
+          });
+        };
+      </script>
+       <p>Special Offers are for those customers, who come regularly and for those who wants to come. We are kind with our customers and would like to keep them interact with the Mall. So, explore our offers. </p>
+     </div>  
+    <div class= 'card-body'>
+    <div class= 'cards-container'>
+    <div class= 'cards'>
+      <img src= 'nandoss.jpg'>
+      <div class= 'card-content'>
+        <h1>Nandos Offer</h1>
+           <p>Buy two large meal and get One free</p>
+         <p>Family with Children can have a free soft drinks with their meal</p>
+           <p>Nandos giving you 50% Discount right now!<p>
+        <a class= 'link' href= 'https://www.nandos.com/'>Nandos.com</a>
+      </div>
+    </div>
+      <div class= 'cards'>
+          <img src= 'nikee.png'>
+          <div class= 'card-content'>
+            <h1>Nike Offer</h1>
+            <p>50% Discount for students in the shoes products</p>
+            <p>40% Jacket Discount for Women.</p>
+            <p>Buy 5 pairs of Socks and you have a chance to win a One Pair of Shoes</p>
+            <a class= 'link'href= 'https://www.nike.com/gb/?cp=17971425167_search_&Macro=-nike-g-10628702377-107985201027-e-c-EN-pure-452352526306-kwd-11642601-9046656&ds_rl=1252249&gad_source=1&gclid=CjwKCAiAxaCvBhBaEiwAvsLmWF3OVTBixrqDqr35rqwsft7y39ItSsRGEHPuginRpYnUm5391QbY0RoC0CAQAvD_BwE&gclsrc=aw.ds'>Nike</a>
+          </div>
+      </div>
+    <div class= 'cards'>
+        <img src= 'car parking.JPG'>
+        <div class= 'card-content'>
+          <h1>Car Parking Offer</h1>
+           <P>FREE Parking for all customers for two days, which are saturday and sunday.</P>
+          <p>Family have 20% off from the ticket.</p>
+
+          <a class= 'link' href= 'https://completelyretail.co.uk/shopping-centres/nottingham'>Explore More Mall</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+      <div class= 'footercontainer'>
+        <h1>Contact Us</h1>
+        <div class= 'footer-icons'>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+      </div>
+      <div class= 'copyright'>
+        <p>Copyright © 2009 AMAP MALL. All right reserved.</p>
+      </div>
+    </footer>
+    </body>
+    </html>

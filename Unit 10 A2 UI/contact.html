@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel='icon' type="image/png" href='icons8-huawei-logo-32.png'>
+    <title>AMAP Mall</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <!--Script Tags -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class='logo'><span>A</span>map <span>M</span>all
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+           <img width="64" height="64" src="https://img.icons8.com/dusk/64/huawei-logo.png" alt="huawei-logo"/></li>
+        <li class='btn'><span class="fas fa-bars"></span></li>
+        <div class='items'>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='special.html'>Special Offers</a></li>
+          <li><a href='explore.html'>Explore Mall</a></li>
+          <li><a href='mapp.html'>Mall Map</a </li>
+          <li><a href='contact.html'>Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+     <div class= 'header'>
+      <h1>AMAP Contact Form</h1>
+        <p>We love our customers and we want to communicate with them. This is the form, where we can contact wih you.  So, fill this up;) </p>
+        </div>
+    <div class='buttonContainer'>
+       <button id='dark-mode' onclick='darkLightMode()'>Canya Mode</button>
+       <button id='light-mode' onclick='darkLightMode()'>Light Mode</button>
+       <button id='black-mode' onclick='darkLightMode()'>Dark Mode</button>
+       <button id='blue-mode' onclick='darkLightMode()'>Blue Mode</button>
+     </div>
+     <script>
+       function darkLightMode(){
+         let darkMode = document.getElementById('dark-mode');
+         let lightMode = document.getElementById('light-mode');
+         let blackMode = document.getElementById('black-mode');
+         let blueMode = document.getElementById('blue-mode');
+         darkMode.addEventListener('click', function() {
+           let display = document.body;
+           let content = document.getElementById('dark-mode');
+           display.className = 'dark-mode'
+         });
+         lightMode.addEventListener('click', function() {
+           let lightDisplay= document.body;
+           let lightContent = document.getElementById('light-mode');
+           lightDisplay.className = 'light-mode'
+         }); 
+         blackMode.addEventListener('click', function() {
+           let blackDisplay = document.body;
+           let blackContent = document.getElementById('black-mode');
+           blackDisplay.className = 'black-mode'
+         });
+         blueMode.addEventListener('click', function() {
+           let blueDisplay = document.body;
+           let blueContent = document.getElementById('blue-mode');
+           blueDisplay.className = 'blue-mode'
+         });
+       };
+     </script>
+      <form>
+        <div class= 'form-info'>
+        <label>Full Name 
+        </label>
+           <input class= 'info' type= 'text' placeholder= 'Enter your name' required></input>
+        <label>Email
+        </label>
+           <input class= 'info' type= 'email' placeholder= 'Enter your email' required></input>
+        <label>Age
+        </label>
+           <input class= 'info' type= 'number' min= '0' placeholder= 'Enter your age' required></input>
+        <label>Telephone Number
+        </label>
+          <input class= 'info' type= 'tel' placeholder= 'Telephone Number' required></input>
+          <div class= 'options'>
+             <label>Would you recommend AMAP Mall as a friend?</label>
+            <br></br>
+              <input class= 'radio' type= 'radio' value= 'Definitely' name='radio'> Definitely</input>
+            <br></br>
+          <input class= 'radio' type= 'radio' value= 'Maybe' name='radio'> Maybe</input>
+            <br></br>
+          <input class= 'radio' type= 'radio' value= 'Not Sure' name='radio'> Not Sure</input>
+        </div>
+          <hr></hr>
+          <label>Which is your favourite shop of AMAP Mall
+            </label>
+              <select type= 'option'>
+            <option selected>Select an Option</option>
+            <option>Nike</option>
+            <option>Adidas</option>
+            <option>Boots</option>
+            <option>WH Smith</option>
+              </select>
+          <label style= 'margin-top: 5%'>Any comments or suggestions?</label>
+          <textarea col= '20' rows= '8'></textarea>
+            <button type= 'submit'>Submit</button>
+          </div>
+      </form>
+      <div class= 'map'>
+        <h1>Our Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.0258350427894!2d2.2967561764486093!3d48.81956850343771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6710fd737704b%3A0x5daecf857f433bc9!2sAMAP%20Le%20Miam!5e0!3m2!1sen!2suk!4v1709751155212!5m2!1sen!2suk" width="650" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    <footer>
+    <div class= 'footercontainer'>
+      <h1>Contact Us</h1>
+      <div class= 'footer-icons'>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+    </div>
+    <div class= 'copyright'>
+      <p>Copyright © 2009 AMAP MALL. All right reserved.</p>
+    </div>
+    </footer>
+    </body>
+    </html>

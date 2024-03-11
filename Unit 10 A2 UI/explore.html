@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel='icon' type="image/png" href='icons8-huawei-logo-32.png'>
+    <title>AMAP Mall</title>
+    <link rel="stylesheet" href="explore.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <!--Script Tags -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script src="explore.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class='logo'><span>A</span>map <span>M</span>all
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+           <img width="64" height="64" src="https://img.icons8.com/dusk/64/huawei-logo.png" alt="huawei-logo"/></li>
+        <li class='btn'><span class="fas fa-bars"></span></li>
+        <div class='items'>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='special.html'>Special Offers</a></li>
+          <li><a href='explore.html'>Explore Mall</a></li>
+          <li><a href='mapp.html'>Mall Map</a </li>
+          <li><a href='contact.html'>Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+     <div class= 'shops'>
+       <h2>Mall Information</h2>
+       <div class='buttonContainer'>
+         <button id='dark-mode' onclick='darkLightMode()'>Canya Mode</button>
+         <button id='light-mode' onclick='darkLightMode()'>Light Mode</button>
+         <button id='black-mode' onclick='darkLightMode()'>Dark Mode</button>
+         <button id='blue-mode' onclick='darkLightMode()'>Blue Mode</button>
+       </div>
+       <script>
+         function darkLightMode(){
+           let darkMode = document.getElementById('dark-mode');
+           let lightMode = document.getElementById('light-mode');
+           let blackMode = document.getElementById('black-mode');
+           let blueMode = document.getElementById('blue-mode');
+           darkMode.addEventListener('click', function() {
+             let display = document.body;
+             let content = document.getElementById('dark-mode');
+             display.className = 'dark-mode'
+           });
+           lightMode.addEventListener('click', function() {
+             let lightDisplay= document.body;
+             let lightContent = document.getElementById('light-mode');
+             lightDisplay.className = 'light-mode'
+           }); 
+           blackMode.addEventListener('click', function() {
+             let blackDisplay = document.body;
+             let blackContent = document.getElementById('black-mode');
+             blackDisplay.className = 'black-mode'
+           });
+           blueMode.addEventListener('click', function() {
+             let blueDisplay = document.body;
+             let blueContent = document.getElementById('blue-mode');
+             blueDisplay.className = 'blue-mode'
+           });
+         };
+       </script>
+       <p>AMAP Mall is a shopping mall located in the heart of the city. It offers a wide range of shops.</p>
+     </div>  
+    <div class= 'card-body'>
+      <div class= 'cards-container'>
+        <div class= 'cards'>
+          <img src= 'access.jpeg'>
+          <div class= 'card-content'>
+            <h1>Mall Services Information</h1>
+            <li>We have the WC available for man women and disables at the upper and lower floor.</li>
+            <li>Parkling Area is available in a wide range.</li>
+            <li>For the customer and staff security, we have fire exits in the lower and upper floor available in the case if fire is detected.</li>
+            <li>Elevators and Electric stairs available for the customer to have better and relax experience in the mall at lower and uppper floor.</li>
+              <li>Information Centre is available for 24 Hours to provide the customer services and disable accessibilities</li>
+             <li>Free Wifi is available for all the customers. When you have a visit to our shopping center. You are able to access the wifi in your phone setting. The name of the network will be our shop name. So, you can easily access the wifi.</li>
+          </div>
+          </div>
+        <div class= 'cards'>
+          <img src= 'open.jpeg'>
+          <div class= 'card-content'>
+            <h1>Opening Time of the Mall</h1>
+            <li>Monday from 8am to 9pm</li>
+            <li>Tuesday from 8am to 9pm</li>
+            <li>Wednesday from 8am to 9pm</li>
+            <li>Thursday from 8am to 9pm</li>
+            <li>Friday from 8am to 7pm</li>
+            <li>Saturday from 8am to 6pm</li>
+            <li>Sunday from 8am to 6pm</li>           
+    </div>
+        </div>
+        <div class= 'cards'>
+          <img src= 'carr.jpeg'>
+          <div class= 'card-content'>
+            <h1>Car Parking Information</h1>
+            <li>Available Space is about more then 1100 yards</li>
+            <li>Cyclist and Bikes has to park on the red zone area</li>
+            <li>Disable Seats are Available about 400 Yards and has to park on the yellow zone</li>
+            <li>Parent Seats are Available about 550 Yards and has to park on the orange zone</li>
+           <li>The rest of Area is for Cars and Buses</li>
+            <h2>Parking Fees</h2>
+            <li>Up to 1 hour: Free</li>
+            <li>Up to 2 hours: £5.40</li>
+            <li>Up to 4 hours: £6.40</li>
+            <li>Up to 9 hours: £10.40</li>
+            <li>Saturday Sunday: Free Parking</li>   </div>
+          </div>
+        </div>
+    </div>
+    <div class= 'access'>
+      <h1>Accessibility</h1>
+      <p>Our website is available in all the devices. So, you can use it on you mobile and tablet as well and can visit the website to find more about the AMAP Mall.</p>
+    </div>
+    <div class= 'function'>
+      <h1>Function and Features</h1>
+      <p>The website allows you to find the best offers for you. It gives you the information about the whole mall environment and system. You can access the map of the Mall to find the location of the shop, you' d like to visit. You can also contact with us. </p>
+    </div>
+    <div class= 'ws'>
+      <h1>Web Standards</h1>
+      <p>The resources and codes that are used in the developement of the website is precisely developed the intellectual and clear design, Which makes the customer to understand the purpose of visiting this site. The AMAP Team is keep looking for the further improvements and would also like to provide more best experience to meet with best web standards</p>
+    </div>
+    <div class= 'dropdown'>
+      <a class= 'unique' href= 'bank.html'>
+      <button>Bank</button>
+      </a>
+      <div class= 'option'>
+        <a href= 'lloyeds.html'>Lloyeds</a>
+         <a href= 'halifax.html'>Halifax</a>
+         <a href= 'barclays.html'>Barclays</a>
+      </div>
+    </div>
+    <footer>
+    <div class= 'footercontainer'>
+      <h1>Contact Us</h1>
+      <div class= 'footer-icons'>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+    </div>
+    <div class= 'copyright'>
+      <p>Copyright © 2009 AMAP MALL. All right reserved.</p>
+    </div>
+    </footer>
+    </body>
+    </html>

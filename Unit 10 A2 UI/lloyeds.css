@@ -1,0 +1,84 @@
+ .ll {
+  margin-top: 8%;
+  align-items: center;
+  margin-left: 0 auto;
+}
+.ll h1{
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+.card-body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 50px;
+}
+ .cards {
+  width: 625px;
+  background-color:#15959e;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
+ .cards:hover{
+  transform: translateY(-20px);
+}
+.cards img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: .6;
+}
+.card-content {
+  padding: 20px;
+}
+ .card-content h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+   text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+ .card-content h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: white;
+   text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+.card-content li{
+  font-size: 23px;
+  text-align: left;
+  margin-left: 20%;
+  line-height: 3rem;
+  font-family: calibri;
+  margin-bottom: 20px;
+  color: white;
+}
+ .card-content .link {
+  display: flex;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  margin-top: 5%;
+  font-family: 'Comfortaa', sans-serif;
+   font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+.card-content .link:hover {
+  background-color: crimson;
+  transition: background-color 0.3s ease;
+}
